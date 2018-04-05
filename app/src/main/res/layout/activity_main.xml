@@ -1,111 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context="com.barahona.aboutme.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/primerRelative"
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="2">
-
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/fotocircular"
-            android:layout_margin="10dp"
-            />
-    </RelativeLayout>
+        android:layout_height="wrap_content"
+        android:src="@drawable/fotocircular"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
     <LinearLayout
+        android:id="@+id/ly1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        android:layout_below="@id/image">
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
+            android:layout_weight="1"
             android:src="@drawable/fb"
             android:layout_gravity="center"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="Marlene Barahona"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="10dp"
             android:textSize="15sp"
             android:layout_gravity="center"/>
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
-            android:src="@drawable/github"
-            android:layout_gravity="center"/>
+            android:layout_weight="1"
+            android:src="@drawable/github"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="MarleneBarahona"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
             android:textSize="15sp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_below="@id/ly1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_gravity="center">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:src="@drawable/wa" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
             android:text="7967 - 6777"
             android:textSize="15sp" />
 
         <ImageView
-            android:layout_width="40dp"
+            android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_gravity="center"
+            android:layout_weight="1"
             android:src="@drawable/gmail" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="5dp"
             android:text="00118616@uca.edu.sv"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            />
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Powered by Marlene Barahona"
-        android:layout_margin="10dp"/>
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
