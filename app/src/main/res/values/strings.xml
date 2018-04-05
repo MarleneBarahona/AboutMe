@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AboutMe</string>
+    <string name="nombre">Marlene Elizabeth Barahona</string>
+    <string name="facebook">Marlene Barahona</string>
+    <string name="whatsapp">7967 - 6777</string>
+    <string name="github">MarleneBarahona</string>
+    <string name="correo">00118616@uca.edu.sv</string>
 </resources>
