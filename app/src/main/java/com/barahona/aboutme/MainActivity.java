@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 sendIntent1.setType("image/*");
                 sendIntent1.putExtra(Intent.EXTRA_STREAM,imageUri);
                 sendIntent1.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-                sendIntent1.putExtra(Intent.EXTRA_TEXT,((TextView)findViewById(R.id.name)).getText().toString() +"\n"+ ((TextView)findViewById(R.id.carrera)).getText().toString()+"\n"+ ((TextView)findViewById(R.id.facebook)).getText().toString()
-                        +"\n"+ ((TextView)findViewById(R.id.github)).getText().toString()+"\n"+ ((TextView)findViewById(R.id.wa)).getText().toString()+"\n"+ ((TextView)findViewById(R.id.correo)).getText().toString());
+                sendIntent1.putExtra(Intent.EXTRA_TEXT,((TextView)findViewById(R.id.name)).getText().toString() +"\n"+ ((TextView)findViewById(R.id.carrera)).getText().toString()+"\n Facebook: "+ ((TextView)findViewById(R.id.facebook)).getText().toString()
+                        +"\n Github: "+ ((TextView)findViewById(R.id.github)).getText().toString()+"\n WhatsApp: "+ ((TextView)findViewById(R.id.wa)).getText().toString()+"\n Correo: "+ ((TextView)findViewById(R.id.correo)).getText().toString());
 
                 if(sendIntent1.resolveActivity(getPackageManager()) != null){
                     startActivity(sendIntent1);
